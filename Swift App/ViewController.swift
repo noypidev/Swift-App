@@ -3,7 +3,7 @@
 //  Swift App
 //
 //  Created by Remus Victuelles on 10/12/16.
-//  Copyright © 2016 Noypi Dev. All rights reserved.
+//  Copyright © 2016 Noypi Dev. All rights reserved..
 //
 
 import UIKit
@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         lblHey.text = "Hey World!";
         
         
-        if (tapCounter >= 10) {
+        if (tapCounter >= 20) {
             lblHey.text = "Hey, too much tapping!";
             
         } else {
