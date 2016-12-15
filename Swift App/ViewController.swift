@@ -21,12 +21,7 @@ class ViewController: UIViewController {
         /* Change label text as button is tapped
          */
         
-        var result = 0;
-        
-        result = Int(firstTxt.text!)! + Int(secondTxt.text!)!;
-        
-        
-        lblHey.text = String(result);
+        lblHey.text = "\(Int(firstTxt.text!)! + Int(secondTxt.text!)!)";
         
         
 //        if (tapCounter >= 20) {
