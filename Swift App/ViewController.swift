@@ -9,22 +9,33 @@
 import UIKit
 
 class ViewController: UIViewController {
-    var tapCounter = 0;
+    //var tapCounter = 0;
     @IBOutlet weak var lblHey: UILabel!
     
+    
+    @IBOutlet weak var firstTxt: UITextField!
+    
+    @IBOutlet weak var secondTxt: UITextField!
+
     @IBAction func btnTapped(_ sender: Any) {
         /* Change label text as button is tapped
          */
-        lblHey.text = "Hey World!";
+        
+        var result = 0;
+        
+        result = Int(firstTxt.text!)! + Int(secondTxt.text!)!;
         
         
-        if (tapCounter >= 20) {
-            lblHey.text = "Hey, too much tapping!";
-            
-        } else {
-            tapCounter += 1;
-            print("btnTapped activated"); // Log button tap
-        }
+        lblHey.text = String(result);
+        
+        
+//        if (tapCounter >= 20) {
+//            lblHey.text = "Hey, too much tapping!";
+//            
+//        } else {
+//            tapCounter += 1;
+//            print("btnTapped activated"); // Log button tap
+//        }
         
     }
     
